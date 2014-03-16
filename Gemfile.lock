@@ -1,5 +1,5 @@
 GIT
-  remote: git@github.com:ted27/muni.git
+  remote: https://github.com/ted27/muni.git
   revision: 5418bcd964652e033a698549389627f06c621486
   ref: 5418bcd964652e033a698549389627f06c621486
   specs:
