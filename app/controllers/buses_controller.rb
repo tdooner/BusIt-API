@@ -1,7 +1,7 @@
 class BusesController < ApplicationController
   def index
     buses = Muni::VehicleLocation.all.map do |b|
-      { route: b.routeTag, lat: b.lat.to_f, lon: b.lon.to_f }
+      { id: b.id, route: b.routeTag, lat: b.lat.to_f, lon: b.lon.to_f }
     end
 
     if params[:near] && params[:near][:lat].present? && params[:near][:lon].present?

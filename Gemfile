@@ -3,9 +3,6 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
-# Use sqlite3 as the database for Active Record
-# gem 'sqlite3'
-
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
@@ -30,6 +27,9 @@ gem 'jbuilder', '~> 1.2'
 gem 'muni', git: 'https://github.com/ted27/muni.git',
             ref: '5418bcd964652e033a698549389627f06c621486'
 
+group :development do
+  gem 'sqlite3'
+end
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
