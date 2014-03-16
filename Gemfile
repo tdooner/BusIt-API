@@ -27,7 +27,7 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
-gem 'muni', git: 'git@github.com:ted27/muni.git',
+gem 'muni', git: 'https://github.com/ted27/muni.git',
             ref: '5418bcd964652e033a698549389627f06c621486'
 
 group :doc do
