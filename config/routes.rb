@@ -1,3 +1,5 @@
 Busit::Application.routes.draw do
-  root 'buses#index'
+  resources :buses
+
+  root 'application#home'
 end
