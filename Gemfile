@@ -30,6 +30,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'muni', git: 'https://github.com/ted27/muni.git',
             ref: '5418bcd964652e033a698549389627f06c621486'
 
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
@@ -37,6 +38,7 @@ end
 
 group :production do
   gem 'pg'
+  gem 'rails_12factor'
 end
 
 # Use ActiveModel has_secure_password
