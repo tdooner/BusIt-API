@@ -11,11 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140316223312) do
+ActiveRecord::Schema.define(version: 20140425050348) do
 
   create_table "check_ins", force: true do |t|
     t.integer  "bus_id"
     t.datetime "created_at"
+    t.integer  "user_id",    default: 0, null: false
   end
 
   create_table "users", force: true do |t|
@@ -24,6 +25,8 @@ ActiveRecord::Schema.define(version: 20140316223312) do
     t.string   "access_token"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "registration_id"
+    t.string   "google_uid"
   end
 
 end

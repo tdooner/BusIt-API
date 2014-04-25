@@ -27,6 +27,8 @@ gem 'jbuilder', '~> 1.2'
 gem 'muni', git: 'https://github.com/ted27/muni.git',
             ref: '5418bcd964652e033a698549389627f06c621486'
 
+gem 'gcm'
+
 group :development do
   gem 'sqlite3'
 end
