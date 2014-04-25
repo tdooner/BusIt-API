@@ -1,9 +1,11 @@
 class UsersController < ApplicationController
   def create
-    render json: User.create(
-      email: params[:email],
-      name: params[:name],
-      access_token: params[:access_token],
-    )
+    render json: User.create(user_params)
+  end
+
+  private
+
+  def user_params
+    params.permit(:name, :email, :access_token, :registration_id)
   end
 end
