@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140425050348) do
+ActiveRecord::Schema.define(version: 20140425052734) do
 
   create_table "check_ins", force: true do |t|
     t.integer  "bus_id"
@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 20140425050348) do
     t.string   "access_token"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "registration_id"
+    t.string   "recipient_id"
     t.string   "google_uid"
   end
 
