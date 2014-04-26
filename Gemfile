@@ -29,8 +29,11 @@ gem 'muni', git: 'https://github.com/ted27/muni.git',
 
 gem 'gcm'
 
-group :development do
+group :development, :test do
   gem 'sqlite3'
+  gem 'rspec-rails'
+  gem 'factory_girl'
+  gem 'pry-byebug'
 end
 
 group :doc do
